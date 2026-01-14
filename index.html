@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Treinos do Luís</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f1f17">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+<body>
+
+<header>
+    <h1>Treinos do Luís</h1>
+    <nav>
+        <button onclick="mostrarAba('planilha')">Planilha</button>
+        <button onclick="mostrarAba('registro')">Registro Semanal</button>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ABA PLANILHA -->
+    <section id="planilha" class="aba ativa">
+        <h2>🏋️ Planilha de Treino</h2>
+
+        <h3>PEITO</h3> 
+
+        <table>
+            <tr>
+                <th>Feito</th>
+                <th>Exercício</th>
+                <th>Séries</th>
+                
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Supino Reto</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Supino Inclinado</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Supino maquina</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>voador </td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Supino com halter</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            </table>
+            <table><h3>COSTAS</h3>
+
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> puxada alta</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> puxada alta triangulo</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> puxada baixa triangulo</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> puxada baixa barra</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> remada superior</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <table>
+            <h3>BICEPS</h3>
+
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> rosca direta halter</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> rosca barra w </td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> rosca concentrada</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> rosca martelo</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> biceps pulley</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+        </table>
+            
+        <table>
+            <h3>TRICIPES</h3>
+
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> tríceps pulley</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> tríceps barra w</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> tríceps corda</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+
+        </table>
+
+        <table>
+            <h3>OMBRO</h3>
+
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> elevação lateral</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> elevação frontal</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+             <tr>
+                <td><input type="checkbox"></td>
+                <td> desenvolvimento c/ halter</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+        
+        </table>
+        <table>
+            <h3>PERNAS</h3>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> agachamento</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> leg press</td>
+                <td>4x12</td>
+                <td></td>  
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> extensora</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> flexora</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td> panturrilha</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+             <tr>
+                <td><input type="checkbox"></td>
+                <td> hack</td>
+                <td>4x12</td>
+                <td></td>
+            </tr>
+        </table>
+
+    </section>
+
+    <!-- ABA REGISTRO SEMANAL -->
+    <section id="registro" class="aba">
+        <h2>📅 Registro Semanal</h2>
+
+        <div class="dias">
+            <div class="dia">
+                <h3>Segunda</h3>
+                <textarea id="seg"></textarea>
+            </div>
+            <div class="dia">
+                <h3>Terça</h3>
+                <textarea id="ter"></textarea>
+            </div>
+            <div class="dia">
+                <h3>Quarta</h3>
+                <textarea id="qua"></textarea>
+            </div>
+            <div class="dia">
+                <h3>Quinta</h3>
+                <textarea id="qui"></textarea>
+            </div>
+            <div class="dia">
+                <h3>Sexta</h3>
+                <textarea id="sex"></textarea>
+            </div>
+            <div class="dia">
+                <h3>Sábado</h3>
+                <textarea id="sab"></textarea>
+            </div>
+            <div class="dia">
+                <h3>Domingo</h3>
+                <textarea id="dom"></textarea>
+            </div>
+        </div>
+
+        <button class="salvar" onclick="salvarRegistro()">Salvar Treinos</button>
+    </section>
+
+</main>
+
+<footer>
+    <p></p>• Luís • Foco, força e disciplina</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
